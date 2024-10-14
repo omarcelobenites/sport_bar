@@ -6,7 +6,6 @@ import { favoritar } from '../../store/reducers/favoritos'
 
 type Props = {
   produto: ProdutoType
-  favoritar: (produto: ProdutoType) => void
   estaNosFavoritos: boolean
 }
 

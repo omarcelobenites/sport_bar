@@ -24,7 +24,6 @@ const ProdutosComponent = () => {
           estaNosFavoritos={verificarProdutoFavorito(produto) ?? false}
           key={produto.id}
           produto={produto}
-          favoritar={favoritos} // Outro erro relacionado
         />
       ))}
     </S.Produtos>
