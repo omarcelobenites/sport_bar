@@ -10,7 +10,7 @@ const api = createApi({
       query: () => 'ebac_sports'
     }),
     getFavoritos: builder.query<[], void>({
-      query: () => '/favoritos'
+      query: () => 'favoritos'
     })
   })
 })
