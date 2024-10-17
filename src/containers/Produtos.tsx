@@ -19,13 +19,17 @@ const ProdutosComponent = () => {
 
   return (
     <S.Produtos>
-      {produtos?.map((produto) => (
-        <Produto
-          estaNosFavoritos={verificarProdutoFavorito(produto) ?? false}
-          key={produto.id}
-          produto={produto}
-        />
-      ))}
+      {produtos?.map((produto) => {
+        const estaNosFavoritos = verificarProdutoFavorito(produto) ?? false
+        console.log('Está nos favoritos:', estaNosFavoritos)
+        return (
+          <Produto
+            estaNosFavoritos={estaNosFavoritos}
+            key={produto.id}
+            produto={produto}
+          />
+        )
+      })}
     </S.Produtos>
   )
 }
