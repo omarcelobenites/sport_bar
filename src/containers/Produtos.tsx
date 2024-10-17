@@ -1,7 +1,7 @@
 import type { Produto as ProdutoType } from '../App'
 import Produto from '../components/Produto'
 import { useGetProdutoQuery } from '../serices/api'
-import { useGetFavoritosQuery } from '../serices/api2'
+import { useGetFavoritosQuery } from '../serices/api'
 import * as S from './styles'
 
 const ProdutosComponent = () => {

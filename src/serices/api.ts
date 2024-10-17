@@ -8,9 +8,12 @@ const api = createApi({
   endpoints: (builder) => ({
     getProduto: builder.query<Produto[], void>({
       query: () => 'ebac_sports'
+    }),
+    getFavoritos: builder.query<[], void>({
+      query: () => 'favoritos'
     })
   })
 })
 
-export const { useGetProdutoQuery } = api
+export const { useGetProdutoQuery, useGetFavoritosQuery } = api
 export default api
